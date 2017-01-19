@@ -18,3 +18,4 @@ services:
     environment:
       - MONGODB_HOST=db
       - REDIS_HOST=redis
+
