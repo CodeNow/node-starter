@@ -18,3 +18,5 @@ services:
     environment:
       - MONGODB_HOST=db
       - NUMBER_ONE=rabbitmq
+
+
