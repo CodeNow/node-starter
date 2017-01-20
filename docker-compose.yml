@@ -7,7 +7,7 @@ services:
   rabbitmq:
     image: rabbitmq
     ports:
-      - "27017:27017" 
+      - "1234:1234" 
   web:
     build: .
     ports:
