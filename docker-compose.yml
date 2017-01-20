@@ -19,3 +19,6 @@ services:
       - MONGODB_HOST=db
       - NUMBER_ONE=rabbitmq
       - MAYBE=db
+
+
+
