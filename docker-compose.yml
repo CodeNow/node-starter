@@ -13,3 +13,4 @@ services:
       - "redis"
     environment:
       - MONGODB_HOST=db
+      - ANOTHER_ENV=db
