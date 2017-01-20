@@ -4,6 +4,10 @@ services:
     image: mongo
     ports:
       - "27017:27017"  
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - "27017:27017" 
   web:
     build: .
     ports:
@@ -13,4 +17,4 @@ services:
       - "redis"
     environment:
       - MONGODB_HOST=db
-      - NUMBER_ONE=db
+      - NUMBER_ONE=rabbitmq
