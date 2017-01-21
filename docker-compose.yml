@@ -14,6 +14,7 @@ services:
       - "3000:3000"
     links:
       - "redis"
+      - "db"
     environment:
       - REDIS_HOST=redis
       - MONGO_HOST=db
