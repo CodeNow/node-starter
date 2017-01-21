@@ -1,9 +1,5 @@
 version: '2'
 services:
-  db:
-    image: mongo
-    ports:
-      - "27017:27017"  
   redis:
     image: redis
     ports:
@@ -13,8 +9,6 @@ services:
     ports:
       - "3000:3000"
     links:
-      - "db"
       - "redis"
     environment:
-      - MONGODB_HOST=db
       - REDIS_HOST=redis
