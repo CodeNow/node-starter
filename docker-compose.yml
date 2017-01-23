@@ -1,7 +1,7 @@
 version: '2'
 services:
   store:
-    image: mysql
+    image: redis
     ports:
       - "123:123"
   db:
