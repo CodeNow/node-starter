@@ -18,6 +18,7 @@ services:
     links:
       - "db"
       - "store"
+      - "nathan"
     environment:
       - MONGO_HOST=db
       - REDIS_HOST=store
