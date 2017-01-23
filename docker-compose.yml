@@ -1,5 +1,9 @@
 version: '2'
 services:
+  store:
+    image: mysql
+    ports:
+      - "123:123"
   db:
     image: mongo
     ports:
@@ -12,6 +16,7 @@ services:
       - "db"
     environment:
       - MONGO_HOST=db
+ 
 
 
 
