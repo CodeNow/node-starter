@@ -1,5 +1,8 @@
 version: '2'
 services:
+  nathan:
+    image: elasticsearch
+    ports: "1312:1312"
   store:
     image: redis
     ports:
@@ -18,6 +21,7 @@ services:
     environment:
       - MONGO_HOST=db
       - REDIS_HOST=store
+      - NATHAN_HOST=nathan
  
 
 
