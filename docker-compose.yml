@@ -2,7 +2,8 @@ version: '2'
 services:
   nathan:
     image: elasticsearch
-    ports: "1312:1312"
+    ports: 
+      - "1312:1312"
   store:
     image: redis
     ports:
