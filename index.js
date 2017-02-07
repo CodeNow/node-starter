@@ -27,7 +27,7 @@ function errorHandler (err, req, res, next) {
 }
 
 app.get('/', (req, res) => {
-  res.redirect(req.protocol + '://subdomain.' + req.get('host') + req.originalUrl;
+  res.redirect(req.protocol + '://subdomain.' + req.get('host') + req.originalUrl);
 })
 
 app.listen(port, () => {
