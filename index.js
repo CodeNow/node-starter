@@ -26,6 +26,12 @@ function errorHandler (err, req, res, next) {
   res.json({ error: err })
 }
 
+app.get('/', (req, res) => {
+  res.redirect(req.protocol + '://subdomain.' + req.get('host') + req.originalUrl + '/stuff');
+})
+app.get('/stuff', (req, res) => {
+  res.send(200, 'hello')
+})
 app.listen(port, () => {
   var hostName = 'http://' + host + ':' + port
   console.log('Application running at: ' + hostName)
